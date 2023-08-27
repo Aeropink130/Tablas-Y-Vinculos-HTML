@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablas y vínculos</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 
 <body>
@@ -13,13 +14,15 @@
     <caption>Ejemplo de una tabla con animales permitidos</caption>
     <!-- Este elemento representa un título descriptivo en una tabla -->
 
-    <table border="1"><!-- Nuestro elemento table crea una tabla -->
+    <table class="minimalistBlack"><!-- Nuestro elemento table crea una tabla -->
         <!-- Encabezados o cabeceras -->
-        <tr><!-- Representa una fila -->
-            <th>Encabezado1</th><!-- Representa una celda, th es para encabezados  (table header) -->
-            <th>Encabezado2</th>
-            <th>Encabezado3</th>
-        </tr>
+        <thead>
+            <tr><!-- Representa una fila -->
+                <th>Encabezado1</th><!-- Representa una celda, th es para encabezados  (table header) -->
+                <th>Encabezado2</th>
+                <th>Encabezado3</th>
+            </tr>
+        </thead>
         <tr>
             <td>Perro</td><!-- Representa celdas de datos, td (table data) -->
             <td>Gato</td>
@@ -35,13 +38,15 @@
     <br>
 
     <caption>Esta es una tabla con recomendaciones saludables</caption>
-    <table border="1">
-        <tr>
-            <th></th>
-            <th>Snacks</th>
-            <th>Bebidas</th>
-            <th>Postres</th>
-        </tr>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Snacks</th>
+                <th>Bebidas</th>
+                <th>Postres</th>
+            </tr>
+        </thead>
         <tr>
             <th>Alimento</th>
             <td>Chips de camote</td>
